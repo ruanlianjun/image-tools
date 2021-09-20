@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package imageConv;
+
+message ImageConvArgs {
+    string purse_type = 1;
+    bool scale = 2;
+    int64 quality = 3;
+    bytes file = 4;
+    string file_name = 5;
+}
+
+message ImageConvResp {
+    uint64  file_size = 1;
+    string file_name = 2;
+    string file_type = 3;
+    uint64 code = 4;
+}
